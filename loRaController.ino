@@ -1,8 +1,11 @@
+#include <SoftwareSerial.h>
+
+
 enum instructionStates{
   OFF,
   NOTHING,
   CHANGEPITCH,
-  STARTBRAEK,
+  STARTBREAK,
   STOPBREAK,
   INVALIDCOM,
 };
@@ -14,6 +17,12 @@ void setup() {
   //TODO:
   //init pins needed
 
+  //TODO:
+  //init other functions
+
+  //Start up serial communication:
+  Serial.begin(9600);
+  
 }
 
 void loop() {
